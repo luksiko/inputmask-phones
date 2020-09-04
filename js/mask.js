@@ -26,7 +26,7 @@ const mask = (selector) => {
         if (!input.value) {
             input.value = '+';
         } else{
-            input.addEventListener('load', setMask);
+            window.addEventListener('load', setMask);
         }
         
         input.addEventListener('input', setMask);
