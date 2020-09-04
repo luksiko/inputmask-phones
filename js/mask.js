@@ -23,7 +23,11 @@ const mask = (selector) => {
     let inputs = document.querySelectorAll(selector);
 
     inputs.forEach(input => {
-        if (!input.value) {input.value = '+';} else{input.addEventListener('load', setMask);}
+        if (!input.value) {
+            input.value = '+';
+        } else{
+            input.addEventListener('load', setMask);
+        }
         
         input.addEventListener('input', setMask);
         input.addEventListener('focus', setMask);
